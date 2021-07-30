@@ -1,0 +1,24 @@
+{
+  "name": "auto-interface-function-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": "./dist/index.modern.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "@types/mustache": "^4.1.2",
+    "@types/webpack": "^5.28.0",
+    "chokidar": "^3.5.2",
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.3"
+  }
+}
